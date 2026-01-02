@@ -2,9 +2,9 @@
 import { computed } from 'vue';
 import projectsData from './data/projects.json';
 
-// MAPA DE COLORES
 const getTechColor = (tech) => {
   const map = {
+    'Linux': 'text-amber-300 bg-amber-900/20 border-amber-800/50',
     'Apache': 'text-red-300 bg-red-900/20 border-red-800/50',
     'Git': 'text-orange-400 bg-orange-900/20 border-orange-800/50',
     'Docker': 'text-blue-400 bg-blue-900/20 border-blue-800/50',
@@ -24,13 +24,12 @@ const getTechColor = (tech) => {
     'Google Maps API': 'text-green-300 bg-green-900/20 border-green-800/50',
     'PayPal API': 'text-blue-400 bg-blue-900/20 border-blue-800/50',
     'Vite': 'text-purple-300 bg-purple-900/20 border-purple-800/50',
-    'Python': 'text-yellow-400 bg-yellow-900/20 border-yellow-800/50', // Agregado por si decides poner el de placas
-    'OpenCV': 'text-green-400 bg-green-900/20 border-green-800/50',   // Agregado por si decides poner el de placas
+    'Python': 'text-yellow-400 bg-yellow-900/20 border-yellow-800/50', 
+    'OpenCV': 'text-green-400 bg-green-900/20 border-green-800/50',
   };
   return map[tech] || 'text-slate-300 bg-slate-700/50 border-slate-600';
 };
 
-// SIN ORDENAMIENTO AUTOMÁTICO - Respetamos tu orden del JSON
 const atyProjects = computed(() => projectsData.filter(p => p.grupo === 'aty'));
 const freelanceProjects = computed(() => projectsData.filter(p => p.grupo === 'freelance'));
 </script>
@@ -106,31 +105,35 @@ const freelanceProjects = computed(() => projectsData.filter(p => p.grupo === 'f
             </div>
 
             <div class="p-6 flex flex-col flex-grow">
-              <div class="flex justify-between items-start mb-4">
-                <h3 class="text-xl font-bold text-slate-100 group-hover:text-primary transition-colors leading-tight">
-                  {{ project.titulo }}
+              
+              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
+                <h3 class="text-xl font-bold text-slate-100 leading-tight">
+                    {{ project.titulo }}
                 </h3>
-                <span class="text-xs font-mono text-slate-500 bg-slate-900 px-2 py-1 rounded border border-slate-800 whitespace-nowrap ml-2">
+                <span class="text-xs font-mono text-slate-500 bg-slate-900 px-2 py-1 rounded border border-slate-800 whitespace-nowrap w-fit shrink-0">
                   {{ project.periodo }}
                 </span>
               </div>
+              
               <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
                 {{ project.descripcion }}
               </p>
-              <div class="flex flex-wrap gap-2 mt-auto">
+
+              <div class="flex flex-wrap gap-2 mb-2">
                 <span v-for="(tech, index) in project.stack" :key="index" :class="['text-[10px] font-mono px-2 py-1 rounded border transition-colors', getTechColor(tech)]">
                   {{ tech }}
                 </span>
               </div>
             </div>
 
-            <a v-if="project.link" :href="project.link" target="_blank" class="absolute top-4 right-4 p-2 bg-slate-800 text-primary rounded-lg border border-slate-700 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-slate-700 z-20 cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
+            <a v-if="project.link" :href="project.link" target="_blank" 
+               class="w-full py-3 px-6 border-t border-slate-800/50 bg-slate-900/30 hover:bg-primary/10 transition-colors flex items-center justify-between group/link cursor-pointer">
+               <span class="text-sm font-bold text-slate-300 group-hover/link:text-primary transition-colors">Ver Sitio Web</span>
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-500 group-hover/link:text-primary group-hover/link:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+               </svg>
             </a>
-
-          </div>
+            </div>
         </div>
       </section>
 
@@ -158,29 +161,35 @@ const freelanceProjects = computed(() => projectsData.filter(p => p.grupo === 'f
             </div>
 
             <div class="p-6 flex flex-col flex-grow">
-              <div class="flex justify-between items-start mb-4">
-                <h3 class="text-xl font-bold text-slate-100 group-hover:text-primary transition-colors leading-tight">
-                  {{ project.titulo }}
+              
+              <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4">
+                <h3 class="text-xl font-bold text-slate-100 leading-tight">
+                    {{ project.titulo }}
                 </h3>
-                <span class="text-xs font-mono text-slate-500 bg-slate-900 px-2 py-1 rounded border border-slate-800 whitespace-nowrap ml-2">
+                <span class="text-xs font-mono text-slate-500 bg-slate-900 px-2 py-1 rounded border border-slate-800 whitespace-nowrap w-fit shrink-0">
                   {{ project.periodo }}
                 </span>
               </div>
+              
               <p class="text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
                 {{ project.descripcion }}
               </p>
-              <div class="flex flex-wrap gap-2 mt-auto">
+              
+              <div class="flex flex-wrap gap-2 mb-2">
                 <span v-for="(tech, index) in project.stack" :key="index" :class="['text-[10px] font-mono px-2 py-1 rounded border transition-colors', getTechColor(tech)]">
                   {{ tech }}
                 </span>
               </div>
             </div>
-            
-            <a v-if="project.link" :href="project.link" target="_blank" class="absolute top-4 right-4 p-2 bg-slate-800 text-primary rounded-lg border border-slate-700 opacity-0 group-hover:opacity-100 transition-opacity hover:bg-slate-700 z-20 cursor-pointer">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
+
+            <a v-if="project.link" :href="project.link" target="_blank" 
+               class="w-full py-3 px-6 border-t border-slate-800/50 bg-slate-900/30 hover:bg-primary/10 transition-colors flex items-center justify-between group/link cursor-pointer">
+               <span class="text-sm font-bold text-slate-300 group-hover/link:text-primary transition-colors">Ver Sitio Web</span>
+               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-500 group-hover/link:text-primary group-hover/link:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+               </svg>
             </a>
+
           </div>
         </div>
       </section>
@@ -195,7 +204,6 @@ const freelanceProjects = computed(() => projectsData.filter(p => p.grupo === 'f
         </p>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 max-w-4xl mx-auto">
-          
           <a href="mailto:gasparcardos@gmail.com" class="flex items-center gap-4 bg-card-bg border border-slate-700 p-4 rounded-xl hover:border-primary transition-colors text-left group hover:bg-slate-800">
             <div class="bg-slate-800 p-3 rounded-lg text-primary group-hover:bg-primary group-hover:text-black transition-colors shrink-0">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -231,7 +239,6 @@ const freelanceProjects = computed(() => projectsData.filter(p => p.grupo === 'f
               <p class="text-white font-medium text-sm truncate">Enviar Mensaje</p>
             </div>
           </a>
-
         </div>
         
         <p class="text-slate-600 text-sm">

@@ -6,7 +6,7 @@
     "cliente": "Institución Gubernamental",
     "periodo": "Sep 2024 - Mar 2025",
     "descripcion": "Gestión, mantenimiento y actualizaciones de seguridad del sitio web principal de la institución.",
-    "stack": ["Apache", "Git", "PHP", "Laravel", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+    "stack": ["Linux", "Apache", "Git", "PHP", "Laravel", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
     "link": "https://transporteyucatan.org.mx/",
     "fecha_inicio": "2024-09-01",
     "name": "pagina ATY"
@@ -18,7 +18,7 @@
     "cliente": "Institución Gubernamental",
     "periodo": "Sep 2024 - Mar 2025",
     "descripcion": "Sistema optimizado para emisión masiva de credenciales virtuales. Uso de Vistas Nativas PHP para máximo rendimiento.",
-    "stack": ["Apache", "Git", "Docker", "PostgreSQL", "PHP", "Phalcon API", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+    "stack": ["Linux", "Apache", "Git", "Docker", "PostgreSQL", "PHP", "Phalcon API", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
     "link": "https://tramites.transporteyucatan.org.mx/",
     "fecha_inicio": "2024-09-01",
     "name": "credencializacion ATY"
@@ -30,7 +30,7 @@
     "cliente": "Institución Gubernamental",
     "periodo": "Sep 2024 - Mar 2025",
     "descripcion": "Reingeniería de servicios internos mediante API REST. Orquestación con Docker para estandarizar entornos de desarrollo.",
-    "stack": ["Apache", "Git", "Docker", "PostgreSQL", "PHP", "Phalcon API", "HTML", "CSS", "JavaScript", "Vue.js"],
+    "stack": ["Linux", "Apache", "Git", "Docker", "PostgreSQL", "PHP", "Phalcon API", "HTML", "CSS", "JavaScript", "Vue.js"],
     "link": null,
     "fecha_inicio": "2024-09-01",
     "name": "egito ATY"
@@ -42,7 +42,7 @@
     "cliente": "Institución Gubernamental",
     "periodo": "Sep 2024 - Mar 2025",
     "descripcion": "Mantenimiento correctivo y estabilización de sistema crítico de declaraciones patrimoniales.",
-    "stack": ["Apache", "Git", "MySQL", "PHP", "Laravel", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+    "stack": ["Linux", "Apache", "Git", "MySQL", "PHP", "Laravel", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
     "link": null,
     "fecha_inicio": "2024-09-01",
     "name": "declaraciones ATY"
@@ -66,7 +66,7 @@
     "cliente": "Comercio Local (Pyme)",
     "periodo": "Ene 2025 - Mar 2025",
     "descripcion": "Prototipo funcional de plataforma de pedidos en línea con carrito de compras.",
-    "stack": ["Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+    "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
     "link": null,
     "fecha_inicio": "2025-01-01",
     "name": "xtabay"
@@ -78,7 +78,7 @@
     "cliente": "Empresa de Energías Renovables",
     "periodo": "Ago 2023 - Mar 2025",
     "descripcion": "Gestión en tiempo real de cuadrillas, flota vehicular y órdenes de trabajo.",
-    "stack": ["Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Google Maps API"],
+    "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Google Maps API"],
     "link": null,
     "fecha_inicio": "2023-08-01",
     "name": "roburlatam"
@@ -86,11 +86,11 @@
   {
     "id": 4,
     "grupo": "freelance",
-    "titulo": "Inteligencia Electoral y Sistema de Información Geográfica",
+    "titulo": "Inteligencia Territorial y SIG",
     "cliente": "Consultoría Estratégica",
     "periodo": "Ago 2023 - Jun 2024",
-    "descripcion": "Manejo de estructuras jerárquicas recursivas y cartografía digital para logística electoral.",
-    "stack": ["Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Google Maps API"],
+    "descripcion": "Manejo de estructuras jerárquicas recursivas y cartografía digital para logística y distribución estratégica.",
+    "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Google Maps API"],
     "link": null,
     "fecha_inicio": "2023-08-01",
     "name": "rb2024"
@@ -102,7 +102,7 @@
     "cliente": "Empresa de Cosméticos",
     "periodo": "Ene 2022 - Dic 2024",
     "descripcion": "Control masivo de stock, múltiples almacenes, sucursales y fuerza de ventas.",
-    "stack": ["Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+    "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
     "link": null,
     "fecha_inicio": "2022-01-01",
     "name": "dabalash"
@@ -114,7 +114,7 @@
     "cliente": "Empresa de Recolección de Residuos Sólidos",
     "periodo": "Ene 2022 - Dic 2022",
     "descripcion": "ERP para gestión de recolección de residuos sólidos, rutas y flotillas.",
-    "stack": ["Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+    "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
     "link": null,
     "fecha_inicio": "2022-01-01",
     "name": "pamplonawp"
@@ -126,8 +126,8 @@
     "cliente": "Empresa de Recolección de Residuos Sólidos",
     "periodo": "Ene 2022 - Ago 2022",
     "descripcion": "Consulta de adeudos y pagos ciudadanos con integración bancaria.",
-    "stack": ["Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "PayPal API"],
-    "link": null,
+    "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "PayPal API"],
+    "link": "http://www.pamplona.com.mx/",
     "fecha_inicio": "2022-01-01",
     "name": "pamplona"
   },
@@ -138,7 +138,7 @@
     "cliente": "Empresa de Préstamos",
     "periodo": "Ene 2021 - Mar 2025",
     "descripcion": "Gestión de Cobranza, notificaciones y cálculo de intereses.",
-    "stack": ["Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+    "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
     "link": null,
     "fecha_inicio": "2021-01-01",
     "name": "sisconde"
@@ -146,11 +146,11 @@
   {
     "id": 9,
     "grupo": "freelance",
-    "titulo": "Gestión Estructural y Logística de Eventos",
+    "titulo": "Gestión Estructural y Logística Masiva",
     "cliente": "Consultoría Estratégica",
     "periodo": "Ene 2020 - Jul 2021",
-    "descripcion": "Sistema de estructuras militantes y logística de eventos.",
-    "stack": ["Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Google Maps API"],
+    "descripcion": "Sistema de gestión de recursos humanos y coordinación logística de eventos.",
+    "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Google Maps API"],
     "link": null,
     "fecha_inicio": "2020-01-01",
     "name": "rb2021"
@@ -162,7 +162,7 @@
     "cliente": "Institución Gubernamental",
     "periodo": "Ene 2020 - Sep 2020",
     "descripcion": "Sistema especializado para el censo, gestión y monitoreo del arbolado urbano y espacios verdes.",
-    "stack": ["Apache", "Git", "PostgreSQL", "PHP", "Laravel", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
+    "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Laravel", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery"],
     "link": null,
     "fecha_inicio": "2020-01-01",
     "name": "arbolmid"
@@ -170,11 +170,11 @@
   {
     "id": 11,
     "grupo": "freelance",
-    "titulo": "Eventos Georreferenciados",
+    "titulo": "Logística de Eventos Georreferenciados",
     "cliente": "Organización de Eventos",
     "periodo": "Ago 2019 - Ene 2020",
-    "descripcion": "CRUD de eventos con pines en mapa interactivo.",
-    "stack": ["Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Google Maps API"],
+    "descripcion": "Plataforma para gestión de ubicaciones y logística de eventos en mapa interactivo.",
+    "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "Google Maps API"],
     "link": null,
     "fecha_inicio": "2019-08-01",
     "name": "rompiendo"
