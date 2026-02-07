@@ -1,5 +1,29 @@
-# Vue 3 + Vite
+ # Portafolio - Gaspar Cardos
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Portafolio profesional desarrollado con Vue 3, Vite y Tailwind CSS.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Sitio
+
+- Produccion: https://gasparcardos.github.io/portfolio/
+
+## Stack
+
+- Vue 3
+- Vite
+- Tailwind CSS
+
+## Scripts
+
+- `npm run dev` - Servidor de desarrollo
+- `npm run build` - Build de produccion
+- `npm run preview` - Preview del build
+- `npm run deploy` - Publica en GitHub Pages
+
+## Deploy
+
+El proyecto se publica en GitHub Pages con base `/portfolio/`.
+
+## Contacto
+
+- Correo: gasparcardos@gmail.com
+- WhatsApp: https://wa.me/529995457331

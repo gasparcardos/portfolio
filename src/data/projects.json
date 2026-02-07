@@ -106,7 +106,7 @@
         "periodo": "Ene 2022 - Ago 2022",
         "descripcion": "Pasarela de pagos segura. Integración con API bancaria y PayPal para conciliación automática de adeudos ciudadanos.",
         "stack": ["Linux", "Apache", "Git", "PostgreSQL", "PHP", "Phalcon", "HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "PayPal API"],
-        "link": "http://www.pamplona.com.mx/"
+        "link": "https://www.pamplona.com.mx/"
       },
       {
         "id": 8,
