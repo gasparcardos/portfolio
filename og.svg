@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Gaspar Cardos | Desarrollador Web Full Stack">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#a78bfa" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+
+  <g>
+    <rect x="420" y="140" width="360" height="32" rx="16" fill="#0b1f33" stroke="#1f3a56" />
+    <text x="600" y="162" font-size="14" font-family="Segoe UI, Arial, sans-serif" fill="#7dd3fc" text-anchor="middle">Disponible para Proyectos Inmediatos</text>
+
+    <text x="600" y="270" font-size="72" font-family="Segoe UI, Arial, sans-serif" font-weight="700" fill="url(#name)" text-anchor="middle">Gaspar Cardos</text>
+    <text x="600" y="330" font-size="32" font-family="Segoe UI, Arial, sans-serif" fill="#e5e7eb" text-anchor="middle">Desarrollador Web Full Stack</text>
+    <text x="600" y="372" font-size="22" font-family="Segoe UI, Arial, sans-serif" fill="#94a3b8" text-anchor="middle">Transformo logica de negocio compleja en sistemas web robustos y escalables.</text>
+
+    <rect x="220" y="410" width="760" height="54" rx="12" fill="#0b1f33" stroke="#1f3a56" />
+    <text x="600" y="444" font-size="22" font-family="Segoe UI, Arial, sans-serif" fill="#93c5fd" text-anchor="middle">PostgreSQL | MySQL | Phalcon | Laravel | Vue.js</text>
+
+    <text x="360" y="536" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#e5e7eb" text-anchor="middle">5+ Años Exp.</text>
+
+    <text x="600" y="536" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#e5e7eb" text-anchor="middle">15+ Proyectos</text>
+
+    <text x="840" y="536" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#e5e7eb" text-anchor="middle">Full Stack (Backend Heavy)</text>
+  </g>
+</svg>
