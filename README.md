@@ -26,4 +26,4 @@ El proyecto se publica en GitHub Pages con base `/portfolio/`.
 ## Contacto
 
 - Correo: gasparcardos@gmail.com
-- WhatsApp: https://wa.me/529995457331
+- WhatsApp: https://wa.me/529992497115
