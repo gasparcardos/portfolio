@@ -135,7 +135,7 @@ const recommendations = [
   {
     title: 'Carta 5',
     file: 'carta_recomendacion_5.pdf',
-    name: 'ISC. Verónica Beariz Be May',
+    name: 'ISC. Verónica Beatriz Be May',
     position: 'Coordinadora del departamento de desarrollo de plataformas, ATY'
   }
 ];
