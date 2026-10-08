@@ -104,6 +104,41 @@ const getTechColor = (tech) => {
   };
   return map[tech] || 'text-slate-300 bg-slate-800/50 border-slate-700 hover:border-slate-500';
 };
+
+const baseUrl = import.meta.env.BASE_URL;
+
+const recommendations = [
+  {
+    title: 'Carta 1',
+    file: 'carta_recomendacion_1.pdf',
+    name: 'IDS. Abraham Canul Flores',
+    position: 'Jefe de departamento, IMOVEQROO'
+  },
+  {
+    title: 'Carta 2',
+    file: 'carta_recomendacion_2.pdf',
+    name: 'ISC. Fredo Ismael Cruz Rodríguez',
+    position: 'Líder de proyectos, Municipio de Mérida'
+  },
+  {
+    title: 'Carta 3',
+    file: 'carta_recomendacion_3.pdf',
+    name: 'LIC. Moises Alejandro Te Pavon',
+    position: 'Jefe del departamento de desarrollo de plataformas, ATY'
+  },
+  {
+    title: 'Carta 4',
+    file: 'carta_recomendacion_4.pdf',
+    name: 'ING. Flor Abril Esparza Santos',
+    position: 'Implementadora de plataformas digitales, IMOVEQROO'
+  },
+  {
+    title: 'Carta 5',
+    file: 'carta_recomendacion_5.pdf',
+    name: 'ISC. Verónica Beariz Be May',
+    position: 'Coordinadora del departamento de desarrollo de plataformas, ATY'
+  }
+];
 </script>
 
 <template>
@@ -238,6 +273,128 @@ const getTechColor = (tech) => {
                </svg>
             </a>
            </article>
+        </div>
+      </section>
+
+      <section class="mb-32">
+        <div class="flex items-end gap-4 mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-white">Perfil profesional</h2>
+          <div class="h-px bg-slate-800 flex-grow mb-2"></div>
+        </div>
+
+        <div class="group w-full bg-card-bg rounded-xl border border-slate-800 hover:border-slate-600 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5 overflow-hidden flex flex-col">
+          <div class="flex items-center gap-2 px-4 py-3 border-b border-slate-800/50 bg-slate-900/50">
+            <div class="flex gap-1.5">
+              <div class="w-2.5 h-2.5 rounded-full bg-red-500/20 group-hover:bg-red-500 transition-colors"></div>
+              <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/20 group-hover:bg-yellow-500 transition-colors"></div>
+              <div class="w-2.5 h-2.5 rounded-full bg-green-500/20 group-hover:bg-green-500 transition-colors"></div>
+            </div>
+            <div class="ml-auto text-[10px] font-mono text-slate-500 uppercase tracking-wider">
+              CV
+            </div>
+          </div>
+          <div class="p-6 md:p-8 flex-grow">
+            <p class="text-slate-300 leading-relaxed mb-6">
+              Desarrollador Web Full Stack con más de 5 años de experiencia en la construcción y mantenimiento de sistemas empresariales, plataformas institucionales y soluciones de gestión. Mi experiencia se concentra en el desarrollo backend con PHP, Phalcon y Laravel, integrando APIs, bases de datos relacionales y arquitecturas web escalables.
+            </p>
+            <p class="text-slate-400 leading-relaxed">
+              También trabajo con Vue.js, React, JavaScript y herramientas de despliegue y control de versiones. Me enfoco en resolver problemas complejos, mejorar sistemas existentes y convertir necesidades de negocio en soluciones mantenibles.
+            </p>
+          </div>
+          <a :href="`${baseUrl}documents/CV.pdf`" target="_blank" rel="noopener noreferrer"
+             class="w-full py-3 px-6 border-t border-slate-800/50 bg-slate-900/30 hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary transition-colors flex items-center justify-between group/link cursor-pointer">
+            <span class="text-sm font-bold text-slate-300 group-hover/link:text-primary transition-colors">Ver CV completo</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-500 group-hover/link:text-primary group-hover/link:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="mb-32">
+        <div class="flex items-end gap-4 mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-white">Formación académica</h2>
+          <div class="h-px bg-slate-800 flex-grow mb-2"></div>
+        </div>
+
+        <article class="group w-full bg-card-bg rounded-xl border border-slate-800 hover:border-slate-600 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5 overflow-hidden flex flex-col">
+          <div class="flex items-center gap-2 px-4 py-3 border-b border-slate-800/50 bg-slate-900/50">
+            <div class="flex gap-1.5">
+              <div class="w-2.5 h-2.5 rounded-full bg-red-500/20 group-hover:bg-red-500 transition-colors"></div>
+              <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/20 group-hover:bg-yellow-500 transition-colors"></div>
+              <div class="w-2.5 h-2.5 rounded-full bg-green-500/20 group-hover:bg-green-500 transition-colors"></div>
+            </div>
+            <div class="ml-auto text-[10px] font-mono text-slate-500 uppercase tracking-wider">
+              Constancia de estudios
+            </div>
+          </div>
+          <div class="p-6 md:p-8 flex-grow">
+            <p class="text-xs text-primary font-mono uppercase tracking-wider mb-2">Estudios universitarios</p>
+            <h3 class="text-xl font-bold text-white mb-2">Licenciatura en Ciencias de la Computación</h3>
+            <p class="text-slate-300 mb-2">Universidad Autónoma de Yucatán (UADY)</p>
+            <p class="text-slate-400 mb-3">Facultad de Matemáticas · Formación universitaria en curso</p>
+            <div class="space-y-2" role="progressbar" aria-label="Avance académico" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">
+              <div class="flex items-center justify-between text-xs font-mono text-slate-500">
+                <span>Avance académico</span>
+                <span>97%</span>
+              </div>
+              <div class="h-2 rounded-full bg-slate-800 overflow-hidden">
+                <div class="h-full w-[97%] rounded-full bg-primary"></div>
+              </div>
+            </div>
+          </div>
+          <a :href="`${baseUrl}documents/constancia_estudios.pdf`" target="_blank" rel="noopener noreferrer"
+             class="w-full py-3 px-6 border-t border-slate-800/50 bg-slate-900/30 hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary transition-colors flex items-center justify-between group/link cursor-pointer">
+            <span class="text-sm font-bold text-slate-300 group-hover/link:text-primary transition-colors">Ver constancia</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-500 group-hover/link:text-primary group-hover/link:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </article>
+      </section>
+
+      <section class="mb-32">
+        <div class="flex items-end gap-4 mb-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-white">Recomendaciones profesionales</h2>
+          <div class="h-px bg-slate-800 flex-grow mb-2"></div>
+        </div>
+
+        <p class="text-slate-400 max-w-3xl mb-8 leading-relaxed">
+          Referencias de personas con quienes he colaborado en proyectos de distinta duración y responsabilidad.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <article v-for="recommendation in recommendations" :key="recommendation.file"
+            class="group bg-card-bg rounded-xl border border-slate-800 hover:border-slate-600 transition-all duration-300 hover:shadow-2xl hover:shadow-primary/5 overflow-hidden flex flex-col">
+            <div class="flex items-center gap-2 px-4 py-3 border-b border-slate-800/50 bg-slate-900/50">
+              <div class="flex gap-1.5">
+                <div class="w-2.5 h-2.5 rounded-full bg-red-500/20 group-hover:bg-red-500 transition-colors"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/20 group-hover:bg-yellow-500 transition-colors"></div>
+                <div class="w-2.5 h-2.5 rounded-full bg-green-500/20 group-hover:bg-green-500 transition-colors"></div>
+              </div>
+              <div class="ml-auto text-[10px] font-mono text-slate-500 uppercase tracking-wider">
+                {{ recommendation.title }}
+              </div>
+            </div>
+            <div class="p-6 flex-grow">
+              <div class="flex items-start justify-between gap-4 mb-5">
+                <div>
+                  <h3 class="text-lg font-bold text-white">{{ recommendation.name }}</h3>
+                  <p class="text-sm text-slate-400 mt-1 leading-relaxed break-words">{{ recommendation.position }}</p>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-500 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 3h8l4 4v14H7a2 2 0 01-2-2V5a2 2 0 012-2zM15 3v5h4M9 13h6M9 17h4" />
+                </svg>
+              </div>
+            </div>
+            <a :href="`${baseUrl}documents/${recommendation.file}`" target="_blank" rel="noopener noreferrer"
+              class="w-full py-3 px-6 border-t border-slate-800/50 bg-slate-900/30 hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary transition-colors flex items-center justify-between group/link cursor-pointer">
+              <span class="text-sm font-bold text-slate-300 group-hover/link:text-primary transition-colors">Leer carta completa</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-slate-500 group-hover/link:text-primary group-hover/link:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </article>
         </div>
       </section>
 
